@@ -1,0 +1,12 @@
+<h2>Stars</h2>
+<ul>
+    {{#each star}}
+    <li><a href="/stars/{{_id}}">{{name}}</a></li>
+    <form action="/stars/{{_id}}/delete" method="POST">
+        <button type="submit">Delete</button>
+    </form>
+    <a href="/stars/edit?starid={{_id}}">Edit</a>
+    {{/each}}
+</ul>
+
+<a href="/stars/new">New</a>

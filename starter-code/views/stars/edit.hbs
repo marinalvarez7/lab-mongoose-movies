@@ -1,0 +1,13 @@
+
+<h2>Edit star</h2>
+<form action="/stars/edit?starid={{star._id}}" method="POST">
+    
+        <label> Name:<input type="text" name="name" value="{{star.name}}"></label>
+  
+        <label>Occupation:<input type="text" name="occupation" value="{{star.occupation}}"></label>
+  
+        <label>Catchphrase:<input type="text" name="catchphrase" value="{{star.catchphrase}}"></label>
+  
+        <button type="submit">Mettre à jour</button>
+    </form>
+
